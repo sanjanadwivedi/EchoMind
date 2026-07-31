@@ -35,6 +35,13 @@ export async function fetchPlayers() {
   return request("/players/");
 }
 
+export async function createPlayer(username = "Sanjana") {
+  return request("/players/", {
+    method: "POST",
+    body: JSON.stringify({ username: typeof username === "string" ? username : "Sanjana" }),
+  });
+}
+
 export async function sendMessage(npcId, playerId, message) {
   return request("/chat/", {
     method: "POST",

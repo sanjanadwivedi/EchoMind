@@ -14,6 +14,13 @@ router = APIRouter(prefix="/players", tags=["Players"])
 def get_players(db: Session = Depends(get_db)):
     players = db.query(Player).all()
 
+    if not players:
+        default_player = Player(username="Sanjana")
+        db.add(default_player)
+        db.commit()
+        db.refresh(default_player)
+        players = [default_player]
+
     return [
         PlayerResponse(
             id=str(player.id),
