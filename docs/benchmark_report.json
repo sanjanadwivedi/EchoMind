@@ -1,0 +1,70 @@
+{
+  "benchmark_summary": {
+    "total_test_cases": 4,
+    "avg_composite_score": 0.8812,
+    "avg_context_precision": 1.0,
+    "avg_groundedness_score": 1.0,
+    "avg_persona_score": 0.525,
+    "latency_p50_ms": 3486.7,
+    "latency_p90_ms": 4790.48,
+    "avg_latency_ms": 3491.54
+  },
+  "details": [
+    {
+      "id": "bench_01",
+      "npc_name": "Eldon the Alchemist",
+      "query": "Do you remember what my favorite drink is?",
+      "latency_ms": 4790.48,
+      "metrics": {
+        "composite_score": 0.75,
+        "context_precision": 1.0,
+        "groundedness": 1.0,
+        "groundedness_reasoning": "The NPC's statement directly reflects the retrieved memory that the player drinks strong espresso every morning, with no added or fabricated information.",
+        "persona_consistency": 0.0,
+        "persona_reasoning": "The response does not reflect the studious, cautious alchemist persona interested in rare herbs and brewing recipes. Instead, it references a modern concept (espresso) unrelated to the character's traits, breaking character entirely."
+      }
+    },
+    {
+      "id": "bench_02",
+      "npc_name": "Ragnar Ironclad",
+      "query": "What weapon did I ask you to forge for me last week?",
+      "latency_ms": 3486.7,
+      "metrics": {
+        "composite_score": 0.95,
+        "context_precision": 1.0,
+        "groundedness": 1.0,
+        "groundedness_reasoning": "The NPC response accurately reflects the retrieved memory about the player ordering a custom mithril broadsword with flame runes, with no additional unsubstantiated details.",
+        "persona_consistency": 0.8,
+        "persona_reasoning": "The response reflects the NPC's role as a blacksmith and hints at sturdy metalwork with the mention of a heavy mithril broadsword. The use of 'Aye!' adds a gruff tone. However, it lacks explicit references to honor or loyalty, and the phrasing is somewhat brief, missing a deeper sense of character."
+      }
+    },
+    {
+      "id": "bench_03",
+      "npc_name": "Luna the Shadow Rogue",
+      "query": "Do I have any pets?",
+      "latency_ms": 2989.71,
+      "metrics": {
+        "composite_score": 0.95,
+        "context_precision": 1.0,
+        "groundedness": 1.0,
+        "groundedness_reasoning": "The NPC's claim about the black cat named Shadow directly matches the retrieved memory, with no additional unsubstantiated details.",
+        "persona_consistency": 0.8,
+        "persona_reasoning": "The response maintains a mysterious and slightly cryptic tone fitting for a cunning assassin, using metaphor and indirect language. However, it is somewhat straightforward and lacks the deeper wit or layered riddling expected from the character."
+      }
+    },
+    {
+      "id": "bench_04",
+      "npc_name": "Eldon the Alchemist",
+      "query": "What is my home kingdom?",
+      "latency_ms": 2699.27,
+      "metrics": {
+        "composite_score": 0.875,
+        "context_precision": 1.0,
+        "groundedness": 1.0,
+        "groundedness_reasoning": "No memories were retrieved, and the NPC response is a general greeting without any factual claims, thus fully grounded.",
+        "persona_consistency": 0.5,
+        "persona_reasoning": "The response is polite and somewhat cautious, which aligns with the NPC's cautious nature, but it lacks any reference to alchemy, herbs, or brewing. It feels more like a generic polite inquiry rather than reflecting the studious alchemist's specific interests."
+      }
+    }
+  ]
+}
