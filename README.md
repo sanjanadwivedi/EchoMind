@@ -167,7 +167,7 @@ python -m pytest tests/ -v
 
 - **Framework:** FastAPI, React 18, Vite 5, Tailwind/Vanilla CSS Tokens
 - **Database & ORM:** PostgreSQL, SQLAlchemy, Alembic, ChromaDB
-- **AI & NLP:** OpenAI API (GPT-4.1-mini, `text-embedding-3-small`)
+- **AI & NLP:** OpenAI API (GPT-4o-mini, `text-embedding-3-small`)
 - **Animation & Audio:** Framer Motion, Canvas API, Web Speech API, Web Audio API
 
 ---
