@@ -108,7 +108,9 @@ export default function ChatPanel({
           </div>
 
           <div className="chat-panel__header-right">
-            <AudioVisualizer isActive={isLoading} type="npc" />
+            <AnimatePresence>
+              {isLoading && <AudioVisualizer isActive={isLoading} type="npc" />}
+            </AnimatePresence>
 
             <div className="chat-panel__audio-controls">
               <button

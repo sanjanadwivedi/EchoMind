@@ -623,7 +623,6 @@ body {
   justify-content: space-between;
   gap: 16px;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .chat-panel__header-left {
@@ -632,6 +631,7 @@ body {
   gap: 14px;
   min-width: 0;
   flex: 1 1 auto;
+  padding-left: 4px;
 }
 
 .chat-panel__header-identity {
@@ -705,9 +705,9 @@ body {
 .chat-panel__header-right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   flex-shrink: 0;
-  flex-wrap: wrap;
+  white-space: nowrap;
 }
 
 /* Audio Visualizer Pill Styling */
@@ -807,15 +807,15 @@ body {
 
 .audio-btn:hover {
   background: var(--bg-surface-hover);
-  color: var(--text-primary);
+  color: #ffffff;
   border-color: var(--accent-purple);
 }
 
 .audio-btn--active {
-  background: rgba(124, 58, 237, 0.18);
-  border-color: var(--accent-purple);
-  color: var(--accent-purple-light);
-  box-shadow: 0 0 10px rgba(124, 58, 237, 0.2);
+  background: rgba(124, 58, 237, 0.35);
+  border-color: rgba(167, 139, 250, 0.6);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.35);
 }
 
 /* ================================================
